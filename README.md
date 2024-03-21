@@ -102,7 +102,7 @@ Obj2Tiles model.obj ./output
 Stop the pipeline at the decimation stage and generate 8 LODs
 
 ```
-Obj2Tiles --stage Decimation --lods 8 model.obj -o ./output
+Obj2Tiles --stage Decimation --lods 8 -i model.obj -o ./output
 ```
 
 ### Splitting
@@ -110,7 +110,7 @@ Obj2Tiles --stage Decimation --lods 8 model.obj -o ./output
 Stop the pipeline at the splitting stage and generate 3 divisions per axis
 
 ```
-Obj2Tiles --stage Splitting --divisions 3 model.obj ./output
+Obj2Tiles --stage Splitting --divisions 3 -i model.obj -o ./output
 ```
 
 ### Full pipeline
@@ -119,6 +119,7 @@ Run all the pipeline stages and generate the `tileset.json` file in the output f
 
 ```
 Obj2Tiles --lods 8 --divisions 3 --lat 40.689434025350025 --lon -74.0444987716782 --alt 120 model.obj ./output
+Obj2Tiles\Obj2Tiles --lods 8 --divisions 3 --lat 40.689434025350025 --lon -74.0444987716782 --alt 120 -i test\odm_textured_model_geo.obj -o ./output
 ```
 
 ## Rotating the model
