@@ -120,6 +120,9 @@ Run all the pipeline stages and generate the `tileset.json` file in the output f
 ```
 Obj2Tiles --lods 8 --divisions 3 --lat 40.689434025350025 --lon -74.0444987716782 --alt 120 model.obj ./output
 Obj2Tiles\Obj2Tiles --lods 8 --divisions 3 --lat 40.689434025350025 --lon -74.0444987716782 --alt 120 -i test\odm_textured_model_geo.obj -o ./output
+以下可行
+Obj2Tiles -z -k --lods 8 --divisions 3 --lat 24.882466585 --lon 118.642592849 --alt 45 -i ws_pipe\ws_line_3D_.obj -o ./pipe_res
+
 ```
 
 ## Rotating the model
